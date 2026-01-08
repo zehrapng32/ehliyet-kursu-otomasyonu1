@@ -19,6 +19,7 @@ int sonNo = 1000;
 
 void kaydet() {
     ofstream f("data.dat", ios::binary | ios::trunc);
+
     if (!f) {
         cerr << "Hata: Veriler dosyaya kaydedilemedi!\n";
         return;
